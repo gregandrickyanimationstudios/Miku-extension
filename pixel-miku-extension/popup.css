@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 10px;
+  width: 200px;
+  font-family: sans-serif;
+  background: #f0f8ff;
+}
+
+#container {
+  text-align: center;
+}
+
+img {
+  width: 96px;
+  image-rendering: pixelated;
+}
+
+p {
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+button {
+  padding: 6px 10px;
+  font-size: 12px;
+  cursor: pointer;
+}

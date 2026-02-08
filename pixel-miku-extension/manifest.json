@@ -1,0 +1,51 @@
+﻿{
+  "manifest_version": 3,
+  "name": "Pixel Miku Helper",
+  "description": "A tiny Pixel Miku who floats in the corner 💙! Pixel art by Saikara (@SaikaraArt on x.com), Code by Greg&Ricky (Greg&RickyAnimationStudios on Youtube)",
+  "version": "0.4.8",
+
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "miku-chrome-cover.png"
+  },
+  "icons": {
+      "48": "miku-extension-cover.png",
+      "128": "miku-chrome-cover.png"
+  },
+  "permissions": [
+    "contextMenus",
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "miku-lay-wave-1.png",
+        "miku-lay-wave-3.png",
+        "miku-lay-wave-4.png",
+        "miku-lay-wave-5.png",
+        "miku-portal-wave-1.png",
+        "miku-portal-wave-2.png",
+        "miku-portal-wave-3.png",
+        "miku-portal-wave-4.png",
+        "music.mp3",
+        "menu-1.png",
+        "menu-2.png"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
